@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/strided-base-reinterpret-complex128",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Reinterpret a Complex128Array as a Float64Array.",
   "license": "Apache-2.0",
   "author": {

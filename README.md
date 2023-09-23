@@ -18,6 +18,17 @@ limitations under the License.
 
 -->
 
+
+<details>
+  <summary>
+    About stdlib...
+  </summary>
+  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
+  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
+  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
+  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
+</details>
+
 # reinterpret
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
@@ -34,14 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/strided-base-reinterpret-complex128
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import reinterpret from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-reinterpret-complex128@esm/index.mjs';
+var reinterpret = require( '@stdlib/strided-base-reinterpret-complex128' );
 ```
 
 #### reinterpret( x, offset )
@@ -49,7 +76,7 @@ import reinterpret from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-rein
 Returns a [`Float64Array`][@stdlib/array/float64] view of a [`Complex128Array`][@stdlib/array/complex128].
 
 ```javascript
-import Complex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex128@esm/index.mjs';
+var Complex128Array = require( '@stdlib/array-complex128' );
 
 var x = new Complex128Array( 10 );
 
@@ -66,7 +93,7 @@ var len = view.length;
 The `offset` argument specifies the starting index of the returned [`Float64Array`][@stdlib/array/float64] view relative to the [`Complex128Array`][@stdlib/array/complex128].
 
 ```javascript
-import Complex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex128@esm/index.mjs';
+var Complex128Array = require( '@stdlib/array-complex128' );
 
 var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 
@@ -103,16 +130,11 @@ var im = view[ 1 ];
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import Complex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex128@esm/index.mjs';
-import real from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-real@esm/index.mjs';
-import imag from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imag@esm/index.mjs';
-import reinterpret from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-reinterpret-complex128@esm/index.mjs';
+```javascript
+var Complex128Array = require( '@stdlib/array-complex128' );
+var real = require( '@stdlib/complex-real' );
+var imag = require( '@stdlib/complex-imag' );
+var reinterpret = require( '@stdlib/strided-base-reinterpret-complex128' );
 
 // Define a complex number array:
 var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
@@ -135,10 +157,6 @@ var re = real( z );
 
 var im = imag( z );
 // returns 10.0
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -170,7 +188,7 @@ var im = imag( z );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -200,8 +218,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/strided-base-reinterpret-complex128.svg
 [npm-url]: https://npmjs.org/package/@stdlib/strided-base-reinterpret-complex128
 
-[test-image]: https://github.com/stdlib-js/strided-base-reinterpret-complex128/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/strided-base-reinterpret-complex128/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/strided-base-reinterpret-complex128/actions/workflows/test.yml/badge.svg?branch=v0.1.0
+[test-url]: https://github.com/stdlib-js/strided-base-reinterpret-complex128/actions/workflows/test.yml?query=branch:v0.1.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/strided-base-reinterpret-complex128/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/strided-base-reinterpret-complex128?branch=main
@@ -230,9 +248,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/strided-base-reinterpret-complex128/main/LICENSE
 
-[@stdlib/array/complex128]: https://github.com/stdlib-js/stdlib/tree/esm
+[@stdlib/array/complex128]: https://github.com/stdlib-js/stdlib
 
-[@stdlib/array/float64]: https://github.com/stdlib-js/stdlib/tree/esm
+[@stdlib/array/float64]: https://github.com/stdlib-js/stdlib
 
 </section>
 

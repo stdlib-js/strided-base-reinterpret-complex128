@@ -177,6 +177,13 @@ var im = imag( z );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/strided-base/reinterpret-complex`][@stdlib/strided/base/reinterpret-complex]</span><span class="delimiter">: </span><span class="description">reinterpret a complex-valued floating-point array as a real-valued floating-point array having the same precision.</span>
+-   <span class="package-name">[`@stdlib/strided-base/reinterpret-complex64`][@stdlib/strided/base/reinterpret-complex64]</span><span class="delimiter">: </span><span class="description">reinterpret a Complex64Array as a Float32Array.</span>
+
 </section>
 
 <!-- /.related -->
@@ -256,6 +263,14 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128
 
 [@stdlib/array/float64]: https://github.com/stdlib-js/array-float64
+
+<!-- <related-links> -->
+
+[@stdlib/strided/base/reinterpret-complex]: https://github.com/stdlib-js/strided-base-reinterpret-complex
+
+[@stdlib/strided/base/reinterpret-complex64]: https://github.com/stdlib-js/strided-base-reinterpret-complex64
+
+<!-- </related-links> -->
 
 </section>
 

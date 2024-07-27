@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/strided-base-reinterpret-complex128",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Reinterpret a Complex128Array as a Float64Array.",
   "license": "Apache-2.0",
   "author": {
@@ -43,9 +43,9 @@
   "devDependencies": {
     "@stdlib/array-buffer": "^0.2.1",
     "@stdlib/array-complex128": "^0.2.1",
-    "@stdlib/assert-is-float64array": "^0.2.1",
-    "@stdlib/complex-imag": "^0.2.1",
-    "@stdlib/complex-real": "^0.2.1",
+    "@stdlib/assert-is-float64array": "^0.2.2",
+    "@stdlib/complex-float64-imag": "^0.1.0",
+    "@stdlib/complex-float64-real": "^0.1.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",

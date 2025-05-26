@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2021 The Stdlib Authors.
@@ -16,16 +16,21 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { Complex128Array } from '@stdlib/types/array';
 
 /**
-* Reinterpret a `Complex128Array` as a `Float64Array`.
+* Reinterprets a `Complex128Array` as a `Float64Array`.
 *
-* @module @stdlib/strided-base-reinterpret-complex128
+* @param x - input array
+* @param offset - starting index
+* @returns `Float64Array` view
 *
 * @example
 * var Complex128Array = require( '@stdlib/array-complex128' );
-* var reinterpret = require( '@stdlib/strided-base-reinterpret-complex128' );
 *
 * var x = new Complex128Array( 10 );
 *
@@ -33,14 +38,10 @@
 * // returns <Float64Array>
 *
 * var bool = ( out.buffer === x.buffer );
-* // returns true
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function reinterpret( x: Complex128Array, offset: number ): Float64Array;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = reinterpret;

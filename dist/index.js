@@ -1,30 +1,5 @@
+"use strict";var n=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var i=n(function(c,t){
+var u=require('@stdlib/array-float64/dist');function s(e,r){return new u(e.buffer,e.byteOffset+e.BYTES_PER_ELEMENT*r,2*(e.length-r))}t.exports=s
+});var a=i();module.exports=a;
 /** @license Apache-2.0 */
-
-'use strict';
-
-/**
-* Reinterpret a `Complex128Array` as a `Float64Array`.
-*
-* @module @stdlib/strided-base-reinterpret-complex128
-*
-* @example
-* var Complex128Array = require( '@stdlib/array-complex128' );
-* var reinterpret = require( '@stdlib/strided-base-reinterpret-complex128' );
-*
-* var x = new Complex128Array( 10 );
-*
-* var out = reinterpret( x, 0 );
-* // returns <Float64Array>
-*
-* var bool = ( out.buffer === x.buffer );
-* // returns true
-*/
-
-// MODULES //
-
-var main = require( './main.js' );
-
-
-// EXPORTS //
-
-module.exports = main;
+//# sourceMappingURL=index.js.map
